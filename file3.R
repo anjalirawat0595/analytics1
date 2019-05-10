@@ -17,17 +17,17 @@ rowMeans(mtcars)
 head(mtcars)
 head(mtcars,1)
 head(mtcars,-1)
-head(mtcars)
-tail(mtcars)
+head(mtcars) #first 5 rows
+tail(mtcars) #last 5 rows
 tail(mtcars,1)  # last row
-mean(mtcars$mpg)
-names(mtcars)
-mean(mtcars$hp)
-colMeans(mtcars)
-rowMeans(mtcars)
-head(mtcars)
-hist(mtcars$mpg)
-hist(mtcars$mpg, breaks=8)
+mean(mtcars$mpg) # for calculating mean
+names(mtcars) # for displaying only names
+mean(mtcars$hp) # mean of mtcars , hp
+colMeans(mtcars) # column wise mean
+rowMeans(mtcars) # row wise mean
+head(mtcars) # first 5 rows
+hist(mtcars$mpg) # histogram representation 
+hist(mtcars$mpg, breaks=4)
 hist(mtcars$mpg, breaks=3)
 x = c(1,2,5,7)
 x
@@ -51,7 +51,7 @@ x7 = rnorm(100)
 mean(x7)
 sd(x7)
 length(x7)
-plot(density(x7))
+?plot(density(x7))
 hist(x7)
 plot(density(x7))
 hist(x7, freq=F)
@@ -62,7 +62,7 @@ points(density(x7))
 
 library(e1071)
 ?kurtosis
-kurtosis(x8)
+kurtosis(x8) # measure of thickness or heaviness of the given distribution for the random variable along its tail
 skewness(x8)
 hist(x8)
 points(density(x8))
